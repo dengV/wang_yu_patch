@@ -1,0 +1,25 @@
+PODS:
+  - Patch (0.0.1)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+
+DEPENDENCIES:
+  - Patch (from `./Patch/Patch.podspec`)
+  - ReactiveCocoa (= 2.5)
+
+EXTERNAL SOURCES:
+  Patch:
+    :path: ./Patch/Patch.podspec
+
+SPEC CHECKSUMS:
+  Patch: 1e981d66e677bac336b7f94dd0948622f92f64b3
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+
+PODFILE CHECKSUM: 3fb1878d2ebd68de57c27f7ae60ceef10caba2de
+
+COCOAPODS: 1.4.0
