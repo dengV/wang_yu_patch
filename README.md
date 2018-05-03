@@ -2,14 +2,9 @@
 enpowered by wang yu
 
 
+# 起源于 王宇的 作品，这只是个文档加强版
 
-
-
-
-
-# 起源于 王宇的 作品
-
-
+> 老王在 elema 的分享 : [如何编写 iOS Patch](http://www.itdks.com/dakalive/detail/10298), IT 大咖说，还是有用的
 
 
 <hr>
@@ -18,15 +13,43 @@ enpowered by wang yu
 <hr>
 
 
+官方 repo :
+
+
+[wangyunico/iOSPatchBackend](https://github.com/wangyunico/iOSPatchBackend)
 
 
 
+[wangyunico/patch-loader-Draft](https://github.com/wangyunico/patch-loader-Draft)
 
 <hr>
 
 
 <hr>
 
+<hr>
+
+
+> 效果是这样滴， 下发前后， 按钮点击的颜色有变化
+
+
+### 前端代码这样起:
+
+> npm run build
+
+
+
+
+<hr>
+
+<hr>
+
+
+<hr>
+
+
+
+20180503 以前的观想
 
 
 
