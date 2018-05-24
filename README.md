@@ -2,7 +2,54 @@
 enpowered by wang yu
 
 
-# 起源于 王宇的 作品，这只是个文档加强版
+
+<hr>
+
+
+<hr>
+
+JSPatch , 远程控制
+
+<hr>
+
+
+
+
+> https://github.com/libffi/libffi
+
+
+> Some programs may not know at the time of compilation what arguments are to be passed to a function. For instance, an interpreter may be told at run-time about the number and types of arguments used to call a given function. Libffi can be used in such programs to provide a bridge from the interpreter program to compiled code.
+
+Libffi 
+
+
+> FFI stands for Foreign Function Interface. A foreign function interface is the popular name for the interface that allows code written in one language to call code written in another language. The libffi library really only provides the lowest, machine dependent layer of a fully featured foreign function interface. A layer must exist above libffi that handles type conversions for values passed between the two languages.
+
+
+### What is libffi? 写的挺精彩的
+
+<hr>
+
+
+<hr>
+
+目测搞热修复最 niubinish 的，自然是 bang.
+
+
+### [bang590/JSPatch](https://github.com/bang590/JSPatch)
+
+
+
+<hr>
+
+
+<hr>
+
+
+
+
+# 这是一个民间 repo
+# 起源于 王宇的 作品，这是文档/ demo 加强版
 
 > 老王在 elema 的分享 : [如何编写 iOS Patch](http://www.itdks.com/dakalive/detail/10298), IT 大咖说，还是有用的
 
@@ -40,16 +87,16 @@ enpowered by wang yu
 
 
 
-<hr>
-
-<hr>
 
 
 <hr>
 
 
+<hr>
 
-20180503 以前的观想
+
+
+20180503 以前的感想
 
 
 

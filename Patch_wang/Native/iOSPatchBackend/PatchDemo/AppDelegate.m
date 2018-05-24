@@ -16,12 +16,19 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-  /*  LuScriptLoader* loader = [LuScriptLoader defaultLoader];
+  /*    */
+   
+   LuScriptLoader* loader = [LuScriptLoader defaultLoader];
     NSString* path = [[NSBundle mainBundle]pathForResource:@"bundle" ofType:@"js"];
     NSString* content = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
     [loader.context evaluateScript:content];
     // Override point for customization after application launch.
-   */
+ 
+      /*    */
+    
+    // 这个 bundle.js 感觉好像是 模块配置表
+    
+    
     
     
    //  实在是不好意思， 我都没发现动态下发的文件在哪
