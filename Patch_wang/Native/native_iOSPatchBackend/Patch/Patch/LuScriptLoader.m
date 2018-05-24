@@ -7,6 +7,8 @@
 //
 
 #import "LuScriptLoader.h"
+
+//
 #import "LuFixCommandDispatcher.h"
 #import "LuFixBaseExtension.h"
 @interface LuScriptLoader ()
@@ -32,7 +34,7 @@
     
     if (self = [super init]) {
         self.context = [[JSContext alloc]init];
-        self.commandDispatcher = [[LuFixCommandDispatcher alloc]initWithLuScriptLoader:self];
+        self.commandDispatcher = [[LuFixCommandDispatcher alloc] initWithLuScriptLoader: self];
         [self initializeJSContext];
     }
     
@@ -45,10 +47,14 @@
     [self.context evaluateScript:@"window = this;"];
     // 定义了context 的declare 方法
     __weak __typeof(self) weakSelf = self;
+    
+    
     self.context[@"_lufix_declare"] = ^(JSValue *command) {
         __strong __typeof(self) strongSelf = weakSelf;
         [strongSelf.commandDispatcher dispatchCommand:command fromfunction:@"declare"];
     };
+    
+    
     // 定义了context 的eval 方法
     self.context[@"_lufix_evaluate"] = ^id(JSValue *command) {
         __strong __typeof(self) strongSelf = weakSelf;

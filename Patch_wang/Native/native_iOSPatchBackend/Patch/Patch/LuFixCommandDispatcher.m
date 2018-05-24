@@ -7,6 +7,10 @@
 //
 
 #import "LuFixCommandDispatcher.h"
+
+
+
+//
 #import "LuFixBaseExtension.h"
 #import "LuClassMethodExtension.h"
 #import "LuInstanceMethodExtension.h"
@@ -18,6 +22,8 @@
 #import "LuAddInstanceMethodExtension.h"
 #import "LuAddClassMethodExtension.h"
 #import "LuARCExtension.h"
+
+
 
 #import <objc/runtime.h>
 #import <objc/message.h>
@@ -87,7 +93,7 @@
     if (extension == nil) {
         if (self.extClsRegisterMap[commandId]) {
             Class extensionKls = self.extClsRegisterMap[commandId];
-            extension =  [(LuFixBaseExtension *)[extensionKls alloc]initWithJSContext:self.scriptLoader.context];
+            extension =  [(LuFixBaseExtension *)[extensionKls alloc] initWithJSContext:self.scriptLoader.context];
         }
     }
     NSDictionary* arguments = commandDic[@"__content"];

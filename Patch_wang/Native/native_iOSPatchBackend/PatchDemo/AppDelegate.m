@@ -7,7 +7,12 @@
 //
 
 #import "AppDelegate.h"
+
+
 #import "LuScriptLoader.h"
+
+
+
 @interface AppDelegate ()
 
 @end
@@ -18,10 +23,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   /*    */
    
-   LuScriptLoader* loader = [LuScriptLoader defaultLoader];
+    LuScriptLoader* loader = [LuScriptLoader defaultLoader];
     NSString* path = [[NSBundle mainBundle]pathForResource:@"bundle" ofType:@"js"];
     NSString* content = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-    [loader.context evaluateScript:content];
+    [loader.context evaluateScript: content];
     // Override point for customization after application launch.
  
       /*    */
