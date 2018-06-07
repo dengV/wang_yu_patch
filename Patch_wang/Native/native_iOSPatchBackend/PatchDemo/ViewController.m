@@ -26,7 +26,8 @@
     @weakify(self);
     [[self.click rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(id x) {
         @strongify(self);
-        self.view.backgroundColor = [UIColor grayColor];
+        //  self.view.backgroundColor = [UIColor grayColor];
+        self.view.backgroundColor = [UIColor redColor];
     }];
 }
 
