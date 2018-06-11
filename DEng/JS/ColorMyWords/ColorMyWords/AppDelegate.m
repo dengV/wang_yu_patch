@@ -7,7 +7,7 @@
     JSManagedValue *_colorPlugin;
 }
 
-@synthesize textView;
+
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {

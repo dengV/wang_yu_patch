@@ -17,7 +17,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		28D21E84176A92EE00815C88 /* ReadMe.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
 		C204ABA71760FB4A00B3ADB7 /* ColorMyWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorMyWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C204ABAA1760FB4A00B3ADB7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		C204ABAD1760FB4A00B3ADB7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -51,7 +50,6 @@
 		C204AB9E1760FB4A00B3ADB7 = {
 			isa = PBXGroup;
 			children = (
-				28D21E84176A92EE00815C88 /* ReadMe.txt */,
 				C204ABB01760FB4A00B3ADB7 /* ColorMyWords */,
 				C204ABA91760FB4A00B3ADB7 /* Frameworks */,
 				C204ABA81760FB4A00B3ADB7 /* Products */,
