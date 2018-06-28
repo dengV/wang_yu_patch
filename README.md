@@ -51,13 +51,20 @@ Libffi
 
 
 
-# 这是一个民间 repo
+# 这是一个民间 repo , 用于 代码设计，  源码 分析与 解读
 # 起源于 王宇的 作品，这是文档/ demo 加强版
 
 > 老王在 elema 的分享 : [如何编写 iOS Patch](http://www.itdks.com/dakalive/detail/10298), IT 大咖说，还是有用的
 
 
 <hr>
+
+
+感觉 加一个 虚拟机 ， 会好一些。
+JSVirtualMachine
+
+
+JSExport
 
 
 <hr>

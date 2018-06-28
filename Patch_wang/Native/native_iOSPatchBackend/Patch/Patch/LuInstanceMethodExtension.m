@@ -23,6 +23,9 @@
 @implementation LuInstanceMethodExtension
 
 
+// 这个好
+
+
 /**
  *   声明实例方法
  *
@@ -30,7 +33,13 @@
  */
 -(void)declare:(NSDictionary *)command {
     NSString* selNameString = command[@"selName"]; // 获得selName
+    // selector name
+    
+    
     NSString* clsNameString = command[@"clsName"]; // 获得clsName
+    // class name
+    
+    
     NSNumber* callbackId = command[@"jsFn"];
     if(callbackId == nil) return;
     JSValue* function = [self.context[@"_lufix_callback"] callWithArguments:@[callbackId]]; // 获得function的可执行对象

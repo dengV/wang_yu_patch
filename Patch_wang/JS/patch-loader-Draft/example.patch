@@ -1,14 +1,26 @@
 import {requireCocoa} from './objcDefine.js'
 const {ViewController,UIColor}= requireCocoa('ViewController','UIColor');
 
+const {IndexTableViewController} = requireCocoa('IndexTableViewController');
+
+
 ViewController.renewInstanceMethods({
   clickIt : function(){
     let weakSelf = self.weakify();
     self.click.rac__signalForControlEvents(1 << 6).subscribeNext((x: id):void => {
-      weakSelf.view.backgroundColor = UIColor.orangeColor();
+      weakSelf.view.backgroundColor = UIColor.cyanColor();
     });
   }
 });
+
+
+IndexTableViewController.renewInstanceMethods({
+    hookJSMethod : function(){
+        self.tableView.rowHeight = 300;
+    }
+});
+
+
 
 
 // LuSubScriptTest.renewInstanceMethods({scriptTest:function(num){

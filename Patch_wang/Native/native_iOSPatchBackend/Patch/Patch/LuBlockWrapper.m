@@ -280,6 +280,8 @@ break; \
 
 
 
+
+
 #pragma mark - class methods
 
 + (ffi_type *)ffiTypeWithEncodingChar:(const char *)c
@@ -340,7 +342,11 @@ break; \
     return NULL;
 }
 
+
+
 static NSMutableDictionary *_typeLengthDict;
+
+
 
 + (int)typeLengthWithTypeEncode:(NSString *)typeEncode
 {
@@ -384,6 +390,8 @@ static NSMutableDictionary *_typeLengthDict;
     }
     return [_typeLengthDict[typeEncode] intValue];
 }
+
+
 
 static id transferJSValue(JSValue *jsval)
 {

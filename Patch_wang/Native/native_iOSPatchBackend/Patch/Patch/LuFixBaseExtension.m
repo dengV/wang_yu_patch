@@ -37,6 +37,9 @@ NSMutableDictionary* _LUFixJSMethods = nil;
  *   为了swizzle的函数，参考了Aspect, 反震forwardInvocation IMP的结构
  *
  *  @param assignSlf
+ assign self
+ 
+ 
  *  @param selector
  *  @param invocation
  */

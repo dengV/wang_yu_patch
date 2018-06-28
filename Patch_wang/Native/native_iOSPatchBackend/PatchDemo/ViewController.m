@@ -29,7 +29,27 @@
         //  self.view.backgroundColor = [UIColor grayColor];
         self.view.backgroundColor = [UIColor redColor];
     }];
+    
+    
+    
+    
 }
+
+
+
+
+
+- (IBAction)backTo:(UIButton *)sender {
+    
+    [self dismissViewControllerAnimated: YES completion: nil];
+    
+    
+}
+
+
+
+
+
 
 
 - (void)didReceiveMemoryWarning {

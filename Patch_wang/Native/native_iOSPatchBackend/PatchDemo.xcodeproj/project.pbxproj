@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2381A33920E4B20C003B7030 /* bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = 2381A33820E4B20B003B7030 /* bundle.js */; };
+		2381A33C20E4B458003B7030 /* IndexTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2381A33B20E4B458003B7030 /* IndexTableViewController.m */; };
 		3E147A182053690900A0A834 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E147A172053690900A0A834 /* AppDelegate.m */; };
 		3E147A1B2053690900A0A834 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E147A1A2053690900A0A834 /* ViewController.m */; };
 		3E147A1E2053690900A0A834 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E147A1C2053690900A0A834 /* Main.storyboard */; };
 		3E147A202053690900A0A834 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E147A1F2053690900A0A834 /* Assets.xcassets */; };
 		3E147A232053690900A0A834 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E147A212053690900A0A834 /* LaunchScreen.storyboard */; };
 		3E147A262053690A00A0A834 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E147A252053690A00A0A834 /* main.m */; };
-		3E147A332053B70400A0A834 /* bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = 3E147A322053B70400A0A834 /* bundle.js */; };
 		CA40A380CDD0D87EC242EB34 /* libPods-PatchDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EC49E871FCA75290B1FF6D1 /* libPods-PatchDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2381A33820E4B20B003B7030 /* bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = bundle.js; sourceTree = "<group>"; };
+		2381A33A20E4B458003B7030 /* IndexTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IndexTableViewController.h; sourceTree = "<group>"; };
+		2381A33B20E4B458003B7030 /* IndexTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IndexTableViewController.m; sourceTree = "<group>"; };
 		3E147A132053690900A0A834 /* PatchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E147A162053690900A0A834 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3E147A172053690900A0A834 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -28,7 +32,6 @@
 		3E147A222053690900A0A834 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E147A242053690A00A0A834 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E147A252053690A00A0A834 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3E147A322053B70400A0A834 /* bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = bundle.js; sourceTree = "<group>"; };
 		43C38FCB319D58FF03705A9C /* Pods-PatchDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatchDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PatchDemo/Pods-PatchDemo.release.xcconfig"; sourceTree = "<group>"; };
 		6EC49E871FCA75290B1FF6D1 /* libPods-PatchDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PatchDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76F283BC8B887B04EBBD7764 /* Pods-PatchDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatchDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PatchDemo/Pods-PatchDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -67,16 +70,18 @@
 		3E147A152053690900A0A834 /* PatchDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2381A33820E4B20B003B7030 /* bundle.js */,
 				3E147A162053690900A0A834 /* AppDelegate.h */,
 				3E147A172053690900A0A834 /* AppDelegate.m */,
 				3E147A192053690900A0A834 /* ViewController.h */,
 				3E147A1A2053690900A0A834 /* ViewController.m */,
-				3E147A322053B70400A0A834 /* bundle.js */,
 				3E147A1C2053690900A0A834 /* Main.storyboard */,
 				3E147A1F2053690900A0A834 /* Assets.xcassets */,
 				3E147A212053690900A0A834 /* LaunchScreen.storyboard */,
 				3E147A242053690A00A0A834 /* Info.plist */,
 				3E147A252053690A00A0A834 /* main.m */,
+				2381A33A20E4B458003B7030 /* IndexTableViewController.h */,
+				2381A33B20E4B458003B7030 /* IndexTableViewController.m */,
 			);
 			path = PatchDemo;
 			sourceTree = "<group>";
@@ -127,7 +132,7 @@
 		3E147A0B2053690900A0A834 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = mino;
 				TargetAttributes = {
 					3E147A122053690900A0A834 = {
@@ -161,7 +166,7 @@
 			files = (
 				3E147A232053690900A0A834 /* LaunchScreen.storyboard in Resources */,
 				3E147A202053690900A0A834 /* Assets.xcassets in Resources */,
-				3E147A332053B70400A0A834 /* bundle.js in Resources */,
+				2381A33920E4B20C003B7030 /* bundle.js in Resources */,
 				3E147A1E2053690900A0A834 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2381A33C20E4B458003B7030 /* IndexTableViewController.m in Sources */,
 				3E147A1B2053690900A0A834 /* ViewController.m in Sources */,
 				3E147A262053690A00A0A834 /* main.m in Sources */,
 				3E147A182053690900A0A834 /* AppDelegate.m in Sources */,
@@ -266,6 +272,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -273,6 +280,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -321,6 +329,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -328,6 +337,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
