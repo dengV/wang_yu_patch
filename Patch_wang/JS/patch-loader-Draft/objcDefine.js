@@ -139,11 +139,15 @@ OCDictionary.prototype.oc_get_prop = function(name){
   let slf = this.getOrigin();
   return Object.prototype.oc_get_prop.call(slf,name);
 }
+
+
 OCDictionary.prototype.oc_set_prop = function(name,val){
  if(typeof val === 'function'){this["name"] = val; return};
  if(val === null){delete this[name];}; 
   return Object.prototype.oc_set_prop.call(this.getOrigin(),name,val);
 }
+
+
 OCDictionary.prototype[metafuncName] = function(selector, ...args){
   let slf = this.getOrigin();
    if (this[selector] && typeof this[selector] == "function") {
@@ -216,6 +220,9 @@ class Super {
     // }
   }
 }
+
+
+
 Super.prototype[metafuncName]= function(selector, ...args){
      let slf = commandParser(this.instance); //取出真实的参数
     if (slf[selector] == null) {
@@ -234,10 +241,14 @@ Super.prototype[metafuncName]= function(selector, ...args){
 }
 global.Super = Super;
 
+
 class Klass {
   constructor (klsName){
     this.className = klsName;
   }
+// 这行代码 写的很吊， deng
+
+
  // 重新定义类方法
   renewClsMethods(methodsMap){
     let functionNames = Object.keys(methodsMap);
@@ -286,6 +297,8 @@ class Klass {
       declare({__type: 'method_create_i',__content:instanceMethod});
    }
   }
+
+  
 //创建类方法
   createClassMethods(...args){
      let instanceMethods = this.methodEncodingHelper(...args);
@@ -294,6 +307,8 @@ class Klass {
       declare({__type: 'method_create_c',__content:instanceMethod});
    }
   }
+
+
   methodEncodingHelper(){
      return Array.prototype.map.call(arguments,function(fn){
         let encoding,selName;

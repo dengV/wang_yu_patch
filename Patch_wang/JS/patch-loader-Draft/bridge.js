@@ -25,8 +25,10 @@ export function evaluate(...arg){
   }finally{
     return ret ;
   } 
- 
+ // ret ， 感觉是 return result 的 缩写
 }
+//  evaluate , 是一个自定义的 方法
+
 
 
 global["_lufix_callback"] = function(callbackId) {
