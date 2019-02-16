@@ -7,6 +7,8 @@
 //
 
 #import "IndexTableViewController.h"
+#import "LuScriptTest.h"
+
 
 @interface IndexTableViewController ()
 
@@ -16,12 +18,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    LuScriptTest * scriptTest = [[LuScriptTest alloc] init];
+    int (^block)(NSString* str,NSInteger num) = [scriptTest testBlock];
+    NSInteger blockReturnNum = block(@"five", 5);
+    NSLog(@"blockReturnNum is %ld", (long)blockReturnNum);
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {

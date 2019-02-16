@@ -60,7 +60,7 @@
         __strong __typeof(self) strongSelf = weakSelf;
        return  [strongSelf.commandDispatcher dispatchCommand:command fromfunction:@"evaluate"];
     };
-
+//  _lufix_evaluate ， 与 node 打包 用的 文件 一致。 约定的 签名。
 }
 
 

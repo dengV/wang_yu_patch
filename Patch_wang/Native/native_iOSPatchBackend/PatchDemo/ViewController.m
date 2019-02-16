@@ -19,6 +19,10 @@
     [super viewDidLoad];
     [self clickIt];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.name = @"Hehe";
+    
+    
 }
 
 
@@ -26,12 +30,8 @@
     @weakify(self);
     [[self.click rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(id x) {
         @strongify(self);
-        //  self.view.backgroundColor = [UIColor grayColor];
-        self.view.backgroundColor = [UIColor redColor];
+        self.view.backgroundColor = [UIColor grayColor];
     }];
-    
-    
-    
     
 }
 
@@ -43,7 +43,7 @@
     
     [self dismissViewControllerAnimated: YES completion: nil];
     
-    
+     NSLog(@"name is %@", self.name);
 }
 
 

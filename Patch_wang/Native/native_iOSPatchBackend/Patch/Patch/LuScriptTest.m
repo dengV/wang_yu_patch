@@ -67,7 +67,8 @@
 -(int (^)(NSString*,NSInteger))testBlock{
     
     int (^blk)(NSString* st,NSInteger tg) = ^(NSString* st,NSInteger tg){
-        NSLog(@"str is %@, %ld",st,(long)tg); return  200;
+        NSLog(@"str is %@, %ld",st,(long)tg);
+        return  200;
     };
     return blk;
 }
